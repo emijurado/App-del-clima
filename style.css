@@ -1,0 +1,157 @@
+
+body{
+     padding: 16px;
+     background-image: url("fondo.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+.card {
+  background-color: dodgerblue;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  height: 56px
+}
+
+  .cards{
+    max-width: 2100px;
+    margin:-10px;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(150px,4fr));
+  }
+  .card1{
+    margin: -2px;
+    padding: 10px;
+    border: 8px solid rgb(140, 160, 160);
+    align-items: center;
+    display: flex;
+    line-height:10px ;/*distancia entre las palabras*/
+    justify-content: center;
+    background:  rgb(122, 151, 156);
+    height: 330px;
+  }
+
+  .card-img-top{
+    height: 110px;
+    width: 110px;
+    margin-left: 35px;
+    margin-top: 9px;
+  }
+  h5{
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    margin-block-end: 45px;
+    margin-block-start: 25px;
+    margin-inline-end: 20px;
+    margin-inline-start:20px ;
+  }
+  h6{
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+    margin-block-end: 45px;
+    margin-block-start: 25px;
+    margin-inline-end: 20px;
+    margin-inline-start:20px ;
+  }
+.icono{
+    height: 190px;
+    width:190px;
+    margin-left: 235px;
+    margin-top: -40px;
+}
+.container3{
+    padding: 60px;
+    margin: 20px;
+    border: 20px;
+    height: 120px;
+    display:flex;
+    justify-content: center;
+
+}
+.container{
+    background-color: rgb(121, 165, 165);
+    margin: -23px;
+    padding: 23px;
+}
+.card-img-top1{
+    height: 150px;
+    width:150px;
+    margin-left: 10px;
+    margin-top: -198px;
+}
+.card-body{
+    height: 330px;
+    width:100%;
+}
+.inputTemp__symbol1{
+    font-size:70px;
+}
+
+.contenedor4{
+  display:flex;
+  flex-direction: row-reverse;
+  background: rgb(206, 218, 218);
+  padding: 12px;
+  border-radius: 10px;
+  margin: -48px ;
+  border: 4px solid rgb(144, 160, 160);
+  justify-content: center;
+  height:200px ;
+  font-size: large;
+  width: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-img-top2{
+  height: 150px;
+  width:150px;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+h1{
+  margin: 0px;
+  padding: 10px;
+  font-size: 80px;
+}
+
+/* .container2__night{
+    background-image: url("noctur.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    .future-forecast {
+      background: rgba(24, 24, 27, 0.8);
+      padding: 25px;
+      bottom: 0;
+      display: flex;
+      color: white;
+      width: 100%;
+      justify-content: center;
+  }
+  
+  .future-forecast .weather-forecast {
+      display: flex;
+  }
+  
+  .future-forecast .weather-forecast-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 5px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 4px;
+      
+  }
+
+  .card-img-top3{
+    height: 50px;
+    width:  50px;
+    margin-left: 10px;
+    margin-top: 8px;
+  }

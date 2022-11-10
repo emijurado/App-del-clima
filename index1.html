@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIMA</title> 
+</head>
+
+<body class="body">
+  <div class="container" id="container">
+    <header>
+        <div class="search__submit" id="search__submit">
+            <nav class="navbar bg-light">
+                <div class="container-fluid">
+                  <!-- <form class="d-flex" id="search__submit" role="search">
+                    <input class="form-control me-2" id="search__submit" type="search" placeholder="UBICACION" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                  </form> -->
+
+                  <select class="form-select" id="select" aria-label="Seleccionar ciudad">
+                    <optgroup label="America">
+                      <option data-latitude="38.8921" data-longitude="-77.0241" data-asl="2">Washington</option>
+                      <option data-latitude="40.71" data-longitude="-74.01" data-asl="10">New York</option>
+                      <option data-latitude="38.5737" data-longitude="-121.4871" data-asl="4">Sacramento</option>
+                      <option data-latitude="34.05" data-longitude="-118.24" data-asl="89">Los Angeles</option>
+                      <option data-latitude="41.85" data-longitude="-87.65" data-asl="179">Chicago</option>
+                      <option data-latitude="29.76" data-longitude="-95.36" data-asl="12">Houston</option>
+                      <option data-latitude="33.45" data-longitude="-112.07" data-asl="331">Phoenix</option>
+                      <option data-latitude="39.95" data-longitude="-75.16" data-asl="12">Philadelphia</option>
+                      <option data-latitude="49.25" data-longitude="-123.12" data-asl="70">Vancouver</option>
+                      <option data-latitude="45.4235" data-longitude="-75.6979" data-asl="74">Ottawa</option>
+                      <option selected="" data-latitude="-34.6118" data-longitude="-58.4173" data-asl="10">Buenos Aires</option>
+                      <option data-latitude="-15.7801" data-longitude="-47.9292" data-asl="1079">Brasilia</option>
+                      <option data-latitude="-33.4691" data-longitude="-70.6420" data-asl="521">Santiago</option>
+                      <option data-latitude="4.6473" data-longitude="-74.0962" data-asl="2619">Bogota</option>
+                      <option data-latitude="19.4271" data-longitude="-99.1276" data-asl="2216">Ciudad de Mexico</option>
+                      <option data-latitude="-25.3005" data-longitude="-57.6362" data-asl="54">Asuncion</option>
+                      <option data-latitude="-12.0931" data-longitude="-77.0465" data-asl="107">Lima</option>
+                      <option data-latitude="-34.8941" data-longitude="-56.0675" data-asl="43">Montevideo</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                      <option data-latitude="52.5235" data-longitude="13.4115" data-asl="34">Berlin</option>
+                      <option data-latitude="48.8567" data-longitude="2.3510" data-asl="34">Paris</option>
+                      <option data-latitude="51.5002" data-longitude="-0.1262" data-asl="14">London</option>
+                      <option data-latitude="40.4167" data-longitude="-3.7033" data-asl="588">Madrid</option>
+                      <option data-latitude="48.2092" data-longitude="16.3728" data-asl="170">Vienna</option>
+                      <option data-latitude="50.8371" data-longitude="4.3676" data-asl="577">Brussels</option>
+                      <option data-latitude="55.7558" data-longitude="37.6176" data-asl="125">Moscow</option>
+                      <option data-latitude="42.7105" data-longitude="23.3238" data-asl="591">Sofia</option>
+                      <option data-latitude="55.6763" data-longitude="12.5681" data-asl="0">Copenhagen</option>
+                      <option data-latitude="37.9792" data-longitude="23.7166" data-asl="153">Athens</option>
+                      <option data-latitude="47.4984" data-longitude="19.0408" data-asl="102">Budapest</option>
+                      <option data-latitude="64.1353" data-longitude="-21.8952" data-asl="15">Reykjavik</option>
+                      <option data-latitude="53.3441" data-longitude="-6.2675" data-asl="8">Dublin</option>
+                      <option data-latitude="41.8955" data-longitude="12.4823" data-asl="14">Rome</option>
+                      <option data-latitude="52.3738" data-longitude="4.8910" data-asl="-1">Amsterdam</option>
+                      <option data-latitude="59.9138" data-longitude="10.7387" data-asl="12">Oslo</option>
+                      <option data-latitude="52.2297" data-longitude="21.0122" data-asl="93">Warsaw</option>
+                      <option data-latitude="38.7072" data-longitude="-9.1355" data-asl="15">Lisabon</option>
+                      <option data-latitude="46.9480" data-longitude="7.4481" data-asl="513">Bern</option>
+                      <option data-latitude="50.4422" data-longitude="30.5367" data-asl="168">Kiev</option>
+                      <option data-latitude="59.3328" data-longitude="18.0645" data-asl="15">Stockholm</option>
+                    </optgroup>
+                    
+                  </select>
+                  <!-- <button id="search" class="btn btn-outline-success" type="submit">BUSCAR</button> -->
+                  <button id="myLocation" class="btn btn-outline-success" type="submit">OBTENER CLIMA MI LOCALIZACION</button>
+
+                </div>
+              </nav>
+        </div>
+
+          
+
+    </header>
+  </div>
+
+ <div class="container3" id="container3">
+    <div class="contenedor4">
+    <div class="inputTemp__temperatura">
+        <div class="inputTemp__celsius" id="degreenumber">8</div>
+        <div class="inputTemp__viento" id="speedViento"> 11.5 Km/h</div>
+    </div>
+    
+    <div>
+    <div class="ubicacion">
+        <div class="ubicacion__ciudad" id="ciudad"><h1>ciudad</h1></div>
+        <div class="ubicacion__fecha" id="fechaDia"></div></div>
+    </div>
+    <div class="weather">
+        <div class="weather__min"><small>min</small><span id="min">°C</span></div>
+        <div class="weather__max"><small>max</small><span id="max">°C</span></div>
+    </div>
+  </div>
+    <div class="icono">
+      <img src="snow.png" class="card-img-top2" alt="sun">
+  </div>
+  </div>
+
+  <div class="future-forecast">
+    <div class="weather-forecast" id="weather-forecast">
+
+    </div>
+</div>
+
+
+    <div class="cards">
+        <div  class="card1" style="width: 170px;">
+            <div class="card-body">
+            <img src="sun.png" class="card-img-top" alt="sun">
+              <h6 class="card-title">20°C</h6>
+              <h6 class="card-title">20°C</h6>
+              <h5 class="card-title">LUNES</h5>
+              <p class="card-text">soleado</p>
+              <p class="card-text">viento</p>
+              <p class="card-text">temperatura</p>
+            </div>
+        </div>
+        <div  class="card1" style="width: 170px;">
+            <div class="card-body">
+            <img src="cloudy.png" class="card-img-top" alt="sun">
+              <h6 class="card-title">2°C</h6>
+              <h5 class="card-title">MARTES</h5>
+              <p class="card-text">soleado</p>
+              <p class="card-text">viento</p>
+              <p class="card-text">temperatura</p>
+            </div>
+        </div>
+        <div  class="card1" style="width: 170px;">
+            <div class="card-body">
+            <img src="cloudy (1).png" class="card-img-top" alt="sun">
+              <h6 class="card-title">8°C</h6>
+              <h5 class="card-title">MIERCOLES</h5>
+              <p class="card-text">soleado</p>
+              <p class="card-text">viento</p>
+              <p class="card-text">temperatura</p>
+            </div>
+        </div>
+        <div  class="card1" style="width: 170px;">
+            <div class="card-body">
+            <img src="rainy.png" class="card-img-top" alt="sun">
+              <h6 class="card-title">11°C</h6>
+              <h5 class="card-title">JUEVES</h5>
+              <p class="card-text">soleado</p>
+              <p class="card-text">viento</p>
+              <p class="card-text">temperatura</p>
+            </div>
+        </div>
+        <div  class="card1" style="width: 170px;">
+            <div class="card-body">
+            <img src="snow.png" class="card-img-top" alt="sun">
+              <h6 class="card-title">8°C</h6>
+              <h5 class="card-title">VIERNES</h5>
+              <p class="card-text">soleado</p>
+              <p class="card-text">viento</p>
+              <p class="card-text">temperatura</p>
+            </div>
+        </div>
+        <div  class="card1" style="width: 170px;">
+            <div class="card-body">
+            <img src="bad-weather.png" class="card-img-top" alt="sun">
+              <h6 class="card-title">2°C</h6>
+              <h5 class="card-title">SABADO</h5>
+              <p class="card-text">soleado</p>
+              <p class="card-text">viento</p>
+              <p class="card-text">temperatura</p>
+            </div>
+        </div>      
+    </div>
+</div>
+    <script src="clima.js"></script>
+
+</body>
+
+</html>
